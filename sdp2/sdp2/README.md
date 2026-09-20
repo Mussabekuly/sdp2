@@ -1,14 +1,8 @@
 # Assignment #2 — Factory Method & Abstract Factory
 Domain: **Media Basket league** — ticket sales (Part A) and social-media publishing (Part B).
 
-Build & run (Java 17+):
-```
-javac -d out $(find src -name '*.java') && java -cp out Main
-```
-
 ## Part A — Factory Method (`tickets`)
 | Role | Class |
-|---|---|
 | Product | `Ticket` |
 | Concrete Products | `StandardTicket`, `VipTicket`, `StudentTicket` |
 | Creator | `TicketDesk` (`createTicket` = factory method, `sell` = shared flow) |
@@ -16,7 +10,6 @@ javac -d out $(find src -name '*.java') && java -cp out Main
 
 ## Part B — Abstract Factory (`media`)
 | Role | Class |
-|---|---|
 | Abstract Products | `MatchAnnouncement`, `ResultPost` |
 | Concrete Products | `Telegram*`, `Instagram*` (2 families) |
 | Abstract Factory | `MediaFactory` |
